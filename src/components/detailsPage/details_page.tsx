@@ -2,7 +2,7 @@ import React from 'react'
 import {useSelector} from 'react-redux';
 import { useParams, useHistory } from 'react-router-dom'
 import {useStyles} from './styles';
-import { Link, Paper, Typography, Grid, Avatar } from '@material-ui/core';
+import { Link, Paper, Typography, Grid, Avatar, CircularProgress, LinearProgress } from '@material-ui/core';
 import {Helmet} from 'react-helmet';
 import GOBACK from '@material-ui/icons/KeyboardBackspace';
 
@@ -18,6 +18,12 @@ const DetailsPage = () => {
     const {page} = useParams<{page?: string}>()
     const persons =  pages.people?.find((p) => p.name === page) || pages.person
 
+    if(!persons) return (
+        <>
+            <CircularProgress color="secondary" />
+            <LinearProgress color="secondary" />
+        </>
+    )
 
 
     return (

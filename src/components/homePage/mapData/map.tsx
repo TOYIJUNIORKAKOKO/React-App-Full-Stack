@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link, Grid, Paper,Avatar, Typography} from '@material-ui/core';
+import {Link, Grid, Paper,Avatar, Typography, CircularProgress, LinearProgress } from '@material-ui/core';
 
 
 import {useStyles} from './styles';
@@ -11,9 +11,16 @@ import {Ipeople} from '../../../interfaces/people_interface';
 const Map:React.FC<Ipeople> = ({people}) => {
     const styles = useStyles();
 
+    if(!people) return (
+        <>
+            <CircularProgress color="secondary" />
+            <LinearProgress color="secondary" />
+        </>
+    )
+
 
     return (
-        <>
+        <>  
             {people && people.map((p) => (
                 <Grid  item xl={6} lg={6} md={6} sm={6} xs={12} key={p.name}>
                 <Link  underline='none' href={`details/${p.name}`}>

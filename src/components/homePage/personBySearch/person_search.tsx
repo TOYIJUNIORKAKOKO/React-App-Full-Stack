@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import {Link, Grid, Paper, Typography} from '@material-ui/core';
+import {Link, Grid, Paper, Typography, CircularProgress, LinearProgress} from '@material-ui/core';
 
 
 import {useStyles} from './styles';
@@ -21,6 +21,15 @@ const GetUsers:React.FC<IpersonSearch> = ({name, person, setPerson}) => {
         };
         setPerson(data?.getPerson[0]);
     }, [data, person, loading, setPerson])
+
+
+    if(!person) return (
+        <>
+            <CircularProgress color="secondary" />
+            <LinearProgress color="secondary" />
+        </>
+    )
+
         
 
     return (
