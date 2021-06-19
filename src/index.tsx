@@ -1,6 +1,6 @@
 import './index.css';
 import React from 'react';
-import { render } from 'react-snapshot';
+import {render} from 'react-dom';
 import {Provider} from 'react-redux';
 import {ApolloClient, InMemoryCache,ApolloProvider} from "@apollo/client";
 
