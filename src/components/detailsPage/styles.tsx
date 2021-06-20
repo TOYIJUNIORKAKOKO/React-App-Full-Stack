@@ -24,7 +24,7 @@ export const useStyles = makeStyles((theme) => ({
     },
 
     divider:{
-        background: "linear-gradient(to right, #18ffff, #d500f9)",        
+        background: "linear-gradient(to right, #18ffff, black, #d500f9)",        
         height:'1rem',
         marginBottom:'0.5rem',
         [theme.breakpoints.down('xs')]: {
@@ -98,7 +98,7 @@ export const useStyles = makeStyles((theme) => ({
         fontWeight:'bold',
         fontFamily:'arvo',
         color:'#18ffff',
-        background: "linear-gradient(to top, #e66465, #9198e5)",        
+        background: "linear-gradient(to top, black, #9198e5, black)",        
         borderTopLeftRadius:'10rem',
         borderTopRightRadius:'10rem',
         [theme.breakpoints.down('xs')]: {
@@ -154,7 +154,7 @@ export const useStyles = makeStyles((theme) => ({
         flexDirection:'row',
         alignItems:'center',
         justifyContent:'center',
-        background: "linear-gradient(to top, #e66465, #9198e5)",        
+        background: "linear-gradient(to top, black, #9198e5, black)",        
         [theme.breakpoints.down('xs')]: {
             width:'100%',
             height:'6rem',
