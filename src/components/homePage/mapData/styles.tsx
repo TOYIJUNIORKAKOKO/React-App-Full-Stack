@@ -40,7 +40,7 @@ export const useStyles = makeStyles((theme) => ({
     },
 
     casts_name:{
-        color:'#546e7a',
+        color:'#b0bec5',
         alignItems:'center',
         fontFamily:'arvo',
         fontWeight:'bold',
