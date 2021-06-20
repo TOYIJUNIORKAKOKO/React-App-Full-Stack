@@ -16,7 +16,7 @@ export const useStyles = makeStyles((theme) => ({
 
 
     form: {
-      background: "linear-gradient(to bottom, black, black, gold)",        
+      background: "linear-gradient(to bottom, black, black, #9198e5)",        
       display:'flex',
         justifyContent:'center',
         alignItems:'center',
@@ -36,7 +36,7 @@ export const useStyles = makeStyles((theme) => ({
         marginLeft: '0.4rem',
         marginRight: '0.4rem',
         color:'black',
-        backgroundColor:'#18ffff',
+        background: "linear-gradient(to right, #18ffff, #18ffff, black)",        
         textTransform: 'uppercase',
         [theme.breakpoints.down('xs')]: {
           marginLeft: '0.1rem',
@@ -59,7 +59,7 @@ export const useStyles = makeStyles((theme) => ({
         fontWeight:'bold',
         fontFamily:'arvo',
         color:'black',
-        backgroundColor:'gold',
+        background: "linear-gradient(to top, #263238, #9198e5)",        
         borderRadius:'0.5rem',
         cursor: 'pointer',
         '&:hover': {
