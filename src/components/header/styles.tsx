@@ -42,7 +42,7 @@ export const useStyles = makeStyles((theme) => ({
     titles: {
       padding:'1rem',
       fontWeight:'bold',
-      color: '#546e7a',
+      color: '#b0bec5',
       fontSize:'1.8rem',
       fontFamily:'arvo',
       [theme.breakpoints.down('xs')]: {
